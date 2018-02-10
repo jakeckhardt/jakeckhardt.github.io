@@ -123,6 +123,7 @@ body #products {
       body #products .slide .projectContainer div a {
         text-decoration: none; }
       body #products .slide .projectContainer div h1 {
+        font-size: 45px;
         margin: 0;
         font-family: 'Playfair Display', serif;
         transition: 0.45s ease; }
@@ -131,7 +132,7 @@ body #products {
         color: white;
         font-size: 22px; }
       body #products .slide .projectContainer div .imgContainer {
-        max-width: 600px;
+        max-width: 450px;
         width: 100%;
         padding: 0;
         display: flex;
@@ -145,19 +146,27 @@ body #products {
           transition: 0.45s ease; }
 
 body #contact #contactInfo {
-  align-items: center;
   margin: 0 auto;
-  display: flex;
-  width: 50%; }
+  display: flex; }
   body #contact #contactInfo p {
     font-size: 25px;
     margin: 0; }
+  body #contact #contactInfo h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 75px;
+    background: -webkit-linear-gradient(-65deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: color-scroll 30s ease infinite; }
   body #contact #contactInfo h3 {
     margin: 0 0 25px 0;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 35px; }
   body #contact #contactInfo div {
-    width: 50%; }
+    margin: 0 auto;
+    width: 50%;
+    text-align: center; }
 
 body #contact form {
   display: flex;
@@ -191,6 +200,38 @@ body #contact form {
     border: 1px solid black;
     transition: 0.5s;
     cursor: pointer; }
+
+@media (max-width: 1200px) {
+  body #header {
+    background-position: 65% 50%; }
+    body #header h1 {
+      margin-top: 45px;
+      font-size: 125px; }
+  body .section .header {
+    margin-top: 25px;
+    font-size: 75px; }
+  body #about p {
+    font-size: 40px;
+    width: 65%;
+    line-height: 65px; }
+  body #products .slide .projectContainer {
+    flex-direction: column; }
+    body #products .slide .projectContainer div {
+      width: 100%;
+      text-align: center; }
+      body #products .slide .projectContainer div h1 {
+        font-size: 65px;
+        margin-bottom: 25px; }
+      body #products .slide .projectContainer div p {
+        display: none; }
+      body #products .slide .projectContainer div .imgContainer {
+        max-width: 650px; }
+  body #contact #contactInfo div h2 {
+    font-size: 65px; }
+  body #contact #contactInfo div h3 {
+    font-size: 45px; }
+  body #contact #contactInfo div p {
+    font-size: 35px; } }
 
 @keyframes color-scroll {
   0% {

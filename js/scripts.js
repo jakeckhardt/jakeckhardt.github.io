@@ -6,7 +6,8 @@ var $social = $("#social"),
     $productsHeader = $("#productsHeader"),
     $contactHeader = $("#contactHeader"),
     $productTitle = $(".projectContainer h1"),
-    $productImg = $(".projectContainer img");
+    $productImg = $(".projectContainer img"),
+    $icons = $("i");
 
 $('#fullpage').fullpage({
 	onLeave: function(index, nextIndex, direction){
@@ -70,3 +71,14 @@ $productImg.mouseenter(function(){
 }).mouseleave(function(){
   $(this).css("opacity", "1")
 })
+
+
+/*$(window).resize(function(){
+
+  if ($(window).width() < 1200) {
+    if ($icons.hasClass("fa-3x")) {
+      $icons.removeClass("fa-3x");
+      $icons.addClass("fa-4x");
+    };
+  };
+});*/

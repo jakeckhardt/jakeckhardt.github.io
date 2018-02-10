@@ -177,6 +177,7 @@ body {
           }
 
           h1 {
+            font-size: 45px;
             margin: 0;
             font-family: 'Playfair Display', serif;
             transition: 0.45s ease;
@@ -189,12 +190,12 @@ body {
           }
 
           .imgContainer {
-            max-width: 600px;
+            max-width: 450px;
             width: 100%;
             padding: 0;
             display: flex;
-            justify-content:center;
-            background:white;
+            justify-content: center;
+            background: white;
             margin: 10px 0;
             border: 2px solid white;
 
@@ -212,14 +213,22 @@ body {
   #contact {
 
     #contactInfo {
-      align-items: center;
       margin: 0 auto;
       display: flex;
-      width: 50%;
 
       p {
         font-size: 25px;
         margin: 0;
+      }
+
+      h2 {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 75px;
+        background: -webkit-linear-gradient(-65deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+        background-size: 400% 400%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: color-scroll 30s ease infinite;
       }
 
       h3 {
@@ -229,7 +238,9 @@ body {
       }
 
       div {
+        margin: 0 auto;
         width: 50%;
+        text-align: center;
       }
     }
 
@@ -275,6 +286,87 @@ body {
         border: 1px solid black;
         transition: 0.5s;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  body {
+
+    #header {
+      background-position: 65% 50%;
+
+      h1 {
+        margin-top: 45px;
+        font-size: 125px;
+      }
+    }
+
+    .section {
+
+      .header {
+        margin-top: 25px;
+        font-size: 75px;
+      }
+    }
+
+    #about {
+
+      p {
+        font-size: 40px;
+        width: 65%;
+        line-height: 65px;
+      }
+    }
+
+    #products {
+
+      .slide {
+
+        .projectContainer {
+          flex-direction: column;
+
+          div {
+            width: 100%;
+            text-align: center;
+
+            h1 {
+              font-size: 65px;
+              margin-bottom: 25px;
+            }
+
+            p {
+              display: none;
+            }
+
+            .imgContainer {
+              max-width: 650px;
+            }
+          }
+        }
+      }
+    }
+
+    #contact {
+
+      #contactInfo {
+
+        div {
+
+          h2 {
+            font-size: 65px;
+          }
+
+          h3 {
+            font-size: 45px;
+          }
+
+          p {
+            font-size: 35px;
+          }
+        }
       }
     }
   }
