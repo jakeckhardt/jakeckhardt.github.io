@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Playfair+Display");
+.preload {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important; }
+
 .animate {
   position: absolute;
   top: 0px;
@@ -225,7 +231,7 @@ body #contact form {
       body #products .slide .projectContainer div p {
         display: none; }
       body #products .slide .projectContainer div .imgContainer {
-        max-width: 650px; }
+        max-width: 600px; }
   body #contact #contactInfo div h2 {
     font-size: 65px; }
   body #contact #contactInfo div h3 {

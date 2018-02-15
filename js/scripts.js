@@ -47,7 +47,9 @@ $('#fullpage').fullpage({
 	}
 });
 
-
+$(window).load(function() {
+  $("body").removeClass("preload");
+});
 
 $nav.mouseenter(function() {
   if ($social.hasClass("change")) {
@@ -64,14 +66,13 @@ $productTitle.mouseenter(function(){
   $(this).css("transform", "translateX(30px)")
 }).mouseleave(function(){
   $(this).css("transform", "translateX(0)")
-})
+});
 
 $productImg.mouseenter(function(){
   $(this).css("opacity", "0.5")
 }).mouseleave(function(){
   $(this).css("opacity", "1")
-})
-
+});
 
 /*$(window).resize(function(){
 

@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Playfair+Display');
 
+.preload {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
 
 .animate {
   position: absolute;
@@ -342,7 +348,7 @@ body {
             }
 
             .imgContainer {
-              max-width: 650px;
+              max-width: 600px;
             }
           }
         }
