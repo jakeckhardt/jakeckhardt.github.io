@@ -47,10 +47,6 @@ $('#fullpage').fullpage({
 	}
 });
 
-$(window).load(function() {
-  $("body").removeClass("preload");
-});
-
 $nav.mouseenter(function() {
   if ($social.hasClass("change")) {
     $(this).css("opacity", "0");
@@ -63,7 +59,7 @@ $nav.mouseenter(function() {
 
 
 $productTitle.mouseenter(function(){
-  $(this).css("transform", "translateX(30px)")
+  $(this).css("transform", "translateX(30px)");
 }).mouseleave(function(){
   $(this).css("transform", "translateX(0)")
 });
@@ -73,13 +69,3 @@ $productImg.mouseenter(function(){
 }).mouseleave(function(){
   $(this).css("opacity", "1")
 });
-
-/*$(window).resize(function(){
-
-  if ($(window).width() < 1200) {
-    if ($icons.hasClass("fa-3x")) {
-      $icons.removeClass("fa-3x");
-      $icons.addClass("fa-4x");
-    };
-  };
-});*/

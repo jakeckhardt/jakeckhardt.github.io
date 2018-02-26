@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Playfair+Display');
 
-.preload {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-}
-
 .animate {
   position: absolute;
   top: 0px;
@@ -53,7 +46,6 @@ body {
 
       i {
         padding: 0 10px;
-        transition: 0.5s;
       }
 
       #color-social {
@@ -93,14 +85,14 @@ body {
       #social {
         top: 0;
         right: 0;
-        position: absolute;
+        position: relative;
         z-index:999;
 
         i {
           opacity: 0;
           color:white;
-          transition: 0.45s;
           cursor: pointer;
+          transition: 0.5s;
         }
       }
   }

@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Playfair+Display");
-.preload {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important; }
-
 .animate {
   position: absolute;
   top: 0px;
@@ -43,8 +37,7 @@ body #nav {
   text-align: right;
   right: 5%; }
   body #nav i {
-    padding: 0 10px;
-    transition: 0.5s; }
+    padding: 0 10px; }
   body #nav #color-social {
     z-index: 0;
     top: 0;
@@ -71,13 +64,13 @@ body #nav {
   body #nav #social {
     top: 0;
     right: 0;
-    position: absolute;
+    position: relative;
     z-index: 999; }
     body #nav #social i {
       opacity: 0;
       color: white;
-      transition: 0.45s;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: 0.5s; }
 
 body .section h1 {
   font-size: 55px;
